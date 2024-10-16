@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <title>Divisibility</title>
+    <body>
+        <script src="index.js"></script>
+        <div class="start">
+            <div class="intro">
+                <h1 class="title">Find Any Remainder &<span class="outline"> Divisiblity Rule</span></h1>
+                <p class="description"> This is a tool to generate and apply a divisiblity rule for any number. If your forgot the trick to check for divisibilty by 451, this calculator has you covered.</p>
+                <button onclick="solve()" class="button">Find Solution</button>
+            </div>
+            <div class="calculator">
+                <h3 class="label">Input Your Dividend:</h3>
+                <textarea id="dividend" rows="5"class="input"></textarea>
+                <h3 class="label">Input Your Divisor:</h3>
+                <textarea id="divisor" rows="5" class="input"></textarea>
+            </div>
+        </div>
+        <div id="output">
+        <h3 class="section">Divisibilty Rule</h3>
+        <div id="Rule">...</div>
+        <div id="equations"></div>
+    </body>
+</html>
