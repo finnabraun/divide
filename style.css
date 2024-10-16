@@ -282,3 +282,8 @@ i {
     border-radius: 10px;
     padding: 10px;
 }
+
+#footer {
+    text-align: right;
+    margin-top: 10px;
+}
