@@ -432,6 +432,9 @@ function isNatural(e, errorBox) {
     case n < 0:
       errorMsg = "Number must be positive";
       break;
+    case n > Number.MAX_SAFE_INTEGER:
+      errorMsg = "Number is too large";
+      break;
     default:
       valid = true;
   }
