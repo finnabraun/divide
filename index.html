@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>divisibility</title>
+    </head>
+    <body>
+        <h1 class="title bold">
+            <span class="accent">[/]</span> divisibility
+            <span class="accent">[/]</span>
+        </h1>
+        <div class="faded regular">
+            There are a number of tricks to check if a number is divisible by
+            another. Some are simple and well known, while others are more
+            obscure. This tool generates a trick for any given number. An
+            explaination for the underlying algorithm is coming soon. In the
+            meantime, Enjoy!
+        </div>
+        <input
+            type="text"
+            placeholder="input number here"
+            class="input bold"
+            id="divisor"
+            autocomplete="off"
+            autofocus
+        />
+    </body>
+    <div id="answer" class="desc regular"></div>
+    <div id="demo">
+        <h2>try it:</h2>
+        <div class="inline-layered">
+            <input
+                type="text"
+                placeholder="#####"
+                class="bold"
+                id="dividend"
+                autocomplete="off"
+            />
+            <span class="bold" id="demoNumber"></span>
+        </div>
+        <div class="desc regular" id="steps">sadfhkjasdhf</div>
+        <div class="hint regular" id="hint"></div>
+    </div>
+    <script src="index.js"></script>
+</html>
