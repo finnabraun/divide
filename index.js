@@ -276,10 +276,10 @@ async function trailReduce(num) {
 
 function waitForSpace() {
   return new Promise((resolve) => {
-    document.addEventListener("keydown", onKeyHandler);
+    document.addEventListener("keyup", onKeyHandler);
     function onKeyHandler(e) {
       if (e.code === "Space") {
-        document.removeEventListener("keydown", onKeyHandler);
+        document.removeEventListener("keyup", onKeyHandler);
         resolve();
       }
     }
@@ -288,14 +288,14 @@ function waitForSpace() {
 
 async function waitForNext() {
   return new Promise((resolve) => {
-    document.addEventListener("keydown", onKeyHandler);
+    document.addEventListener("keyup", onKeyHandler);
     function onKeyHandler(e) {
       if (e.code === "Space") {
-        document.removeEventListener("keydown", onKeyHandler);
+        document.removeEventListener("keyup", onKeyHandler);
         resolve(true);
       }
       if (e.key === "r") {
-        document.removeEventListener("keydown", onKeyHandler);
+        document.removeEventListener("keyup", onKeyHandler);
         resolve(false);
       }
     }
